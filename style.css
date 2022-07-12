@@ -1,0 +1,149 @@
+body{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color:#4d4d4d;
+}
+
+h1, h2, h3{
+    margin:0;
+    font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+/*navegação será realizada através de um container flexível*/
+
+nav{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    background-color:#993211;  
+}
+
+nav > a {
+    text-decoration: none;
+    color:#f1f1f1;
+    font-weight: 700;
+    font-size:28px;
+    font-family: Pacifico, serif;
+}
+
+nav ul{
+    list-style:none;
+    padding:0;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    width: 100%;
+}
+
+nav ul li{
+    text-align: center;
+    width: 100%;
+
+}
+
+nav ul li a{
+    display:inline-block;
+    padding:10px 0;
+    width: 100%;
+    text-decoration: none;
+    color:#f1f1f1;
+}
+
+header{
+    /*background-color:#993399;*/
+
+    background-image: url("img/binary-code.webp");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    color:#f1f1f1;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    /*padding no sentido horário*/
+    padding:10px 20px 20px 20px;
+
+}
+
+header p{
+    /*em é uma medida relativa ao tamanho do elemento pai*/
+    margin-bottom: 2em;
+}
+header a{
+    text-decoration: none;
+    color:#f1f1f1;
+    background-color: #8f2faf;
+    padding:10px 20px;
+    border-radius:3px;
+}
+
+#sobre{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    padding: 0 10px 20px;
+    background-color:#8f2faf;
+    color:#f1f1f1;
+}
+#sobre p{
+    margin-bottom:2.5em;
+    max-width: 1000px;
+}
+
+.botao-contato{
+    color:#4d4d4d;
+    background-color: #f1f1f1;
+    text-decoration:none;
+    padding:10px 30px;
+    font-size: .9em;
+    border-radius:3px;
+    
+}
+
+#servicos{
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+#servicos div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    margin-top:30px;
+}
+
+#portfolio{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding-top:20px;
+}
+
+#portfolio h2{
+    margin-bottom:20px;
+}
+
+#portfolio img{
+    width: 100%;
+}
+
+#contato{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+#rodape{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    font-weight: 300;
+    color:#f1f1f1;
+    background-color: #000;
+}
