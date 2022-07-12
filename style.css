@@ -150,7 +150,6 @@ header a{
 
 @media screen and (min-width:700px) {
     nav{
-        display: flex;
         flex-direction: row;
         justify-content:space-around;
         
@@ -161,4 +160,42 @@ header a{
         flex-direction: row;
         width: 70%;
     }
+
+    header{
+        /*viewport height - toda a área da view
+        
+        Queremos que a altura do header seja de 60% a altura da view
+        */
+        height: 60vh;
+        justify-content:center;
+    }
+
+    #sobre{
+        height: 250px;
+        height: 30vh;
+        justify-content:center;
+    }
+
+    #servicos{
+        flex-direction:row;
+        flex-wrap:wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        /*margin de 0 para cima e para baixo e automático para a esquerda e direita*/
+        margin:0 auto;
+    }
+
+    #servicos h2{
+        text-align:center;
+        width:100%;
+    }
+
+    #servicos div{
+        /*crescem proporcionalmente aos outros elementos ao redor*/
+        flex-grow: 1;
+        flex-basis:150px;
+        padding:0 10px;
+
+    }
+
 }
